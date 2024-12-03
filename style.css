@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    background-image: url(./img/background-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #060606;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #fff;
+}
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.banner{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+ul li a:hover{
+    color: rgb(57, 57, 57);
+}
+.sabores-pizzas{
+    margin-top: 400px;
+    padding-bottom: 60px;
+}
+.sabores-pizzas h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px -2px 10px #060606;
+    margin-bottom: 20px;
+    /* line-height: 6; */
+}
+.sabores-pizzas table{
+   background-color: #2a2a2a; 
+   margin: 0 auto;
+   width: 80%;
+   border-collapse: collapse;
+}
+.sabores-pizzas table td,
+.sabores-pizzas table th{
+    border: 1px solid #000;
+    font-size: 12px;
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 20%;
+}
+.sabores-pizzas .negativo {
+	color: #fb3958;
+}
+.sabores-pizzas .positivo {
+	color: #87b50f;
+}
+footer{
+    background-color: #060606;
+    padding: 35px 0 10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+footer a{
+    font-size: 12px;
+}
+@media screen and (min-width: 2061px) {
+    body{
+        background-image: url(./img/background-pizza.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .banner{
+        width: 1750px;
+    }
+}
+@media screen and (max-width: 1042px) {
+    .banner{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 758px){
+    .banner{
+        flex-direction: column;
+        padding: 1px 0;
+        
+    }
+    h2{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 2;
+    }
+    .sabores-pizzas table td,
+    .sabores-pizzas table th{
+        font-size: 10px;
+        padding: 15px;
+    }
+    .sabores-pizzas{
+        margin-top: 100px;
+        padding-bottom: 30px;
+    }
+}
